@@ -28,3 +28,24 @@ docker run -p 4000:4000 -p 4040:4040 -v ./publisher.config.human.json:/publisher
 docker run -p 4001:4000 -p 4041:4040 -v ./publisher.config.technical.json:/publisher/publisher.config.json -v ./technical:/publisher/technical ms2data/malloy-publisher
 
 ```
+
+Once these services are running and exposing to `http://localhost:4040` and `4041`, download the `malloy_bridge.py` file from https://docs.malloydata.dev/documentation/user_guides/publishing/mcp_agents.  
+
+Ensure you have 2 separate `malloy_bridge.py` files created. One pointing to the intended  exposed docker port for MCP (default: 4040). You can find the `malloy_bridge.py` in the Malloy Publisher docs as well as more install information.
+
+Update the `claude_desktop_config.json` as described. 
+```json
+{
+  "mcpServers": 
+  {
+    "malloy-mcp-human-db": {
+      "command": "python",
+      "args": ["/path/to/malloy_bridge_human.py"]
+    },
+    "malloy-mcp-technical-db": {
+      "command": "python",
+      "args": ["/path/to/malloy_bridge_technical.py"]
+    }
+  }
+}
+```
