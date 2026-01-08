@@ -1,0 +1,54 @@
+-- source-technical.malloy
+
+source: business_data_object is duckdb.table('data-technical/business_data_objects.csv') -> {
+    select: -- asset_id,
+            asset_name,
+            display_name,
+            -- domain_id,
+            description,
+            -- business_definition,
+            -- data_steward,
+            -- business_owner
+    where: asset_type = 'Business Data Object'
+}
+
+source: logical_data_objects is duckdb.table('./data-technical/logical_data_objects.csv') -> {
+    select:     asset_id
+    asset_name
+    -- display_name
+    -- asset_type
+    -- domain_id
+    -- description
+    maps_to_business
+    maps_to_technical
+    -- data_type
+    -- is_nullable
+    -- is_primary_key
+    where : asset_type = 'Logical Data Object'
+}
+source: technical_data_objects is duckdb.table('./data-technical/technical_data_objects.csv') -> {
+    select:  asset_id
+    asset_name
+    display_name
+    asset_type
+    -- domain_id
+    -- description
+    database_name
+    schema_name
+    table_name
+    column_name
+    -- data_type
+    -- max_length
+    -- is_nullable
+    -- is_primary_key
+    -- source_system
+    where : asset_type = 'Technical Table' 
+    or asset_type = 'Technical Column'
+}
+source: relationships is duckdb.table('./data-technical/relationships.csv') -> {
+    select: description,
+            relation_type,
+            source_asset_id,
+            relation_id,
+            target_asset_id
+}

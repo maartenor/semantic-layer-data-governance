@@ -1,0 +1,14 @@
+asset_id,asset_name,display_name,asset_type,domain_id,description,database_name,schema_name,table_name,column_name,data_type,max_length,is_nullable,is_primary_key,source_system
+TDO-CUST-001,customers,customers,Technical Table,DOM-TECHNICAL-001,Customer master data table,postgres.postgresql.svc.cluster.local,machine_demo,customers,,Table,,false,false,ERP System
+TDO-CUST-002,customer_id,customer_id,Technical Column,DOM-TECHNICAL-001,Primary key column for customers,postgres.postgresql.svc.cluster.local,machine_demo,customers,customer_id,VARCHAR,10,false,true,ERP System
+TDO-CUST-003,customer_name,customer_name,Technical Column,DOM-TECHNICAL-001,Customer name column,postgres.postgresql.svc.cluster.local,machine_demo,customers,customer_name,VARCHAR,255,false,false,ERP System
+TDO-CUST-004,country,country,Technical Column,DOM-TECHNICAL-001,Country column,postgres.postgresql.svc.cluster.local,machine_demo,customers,country,VARCHAR,100,false,false,ERP System
+TDO-MACH-001,machines,machines,Technical Table,DOM-TECHNICAL-002,Machine master data table,postgres.postgresql.svc.cluster.local,machine_demo,machines,,Table,,false,false,MES System
+TDO-MACH-002,machine_nr,machine_nr,Technical Column,DOM-TECHNICAL-002,Primary key column for machines,postgres.postgresql.svc.cluster.local,machine_demo,machines,machine_nr,VARCHAR,10,false,true,MES System
+TDO-MACH-003,customer_id,customer_id,Technical Column,DOM-TECHNICAL-002,Foreign key to customers table,postgres.postgresql.svc.cluster.local,machine_demo,machines,customer_id,VARCHAR,10,false,false,MES System
+TDO-MACH-004,machine_type,machine_type,Technical Column,DOM-TECHNICAL-002,Machine type column,postgres.postgresql.svc.cluster.local,machine_demo,machines,machine_type,VARCHAR,10,false,false,MES System
+TDO-MACH-005,model,model,Technical Column,DOM-TECHNICAL-002,Model designation column,postgres.postgresql.svc.cluster.local,machine_demo,machines,model,VARCHAR,50,false,false,MES System
+TDO-LOC-001,locations,locations,Technical Table,DOM-TECHNICAL-003,Location master data table,postgres.postgresql.svc.cluster.local,machine_demo,locations,,Table,,false,false,ERP System
+TDO-IB-001,install_base,install_base,Technical Table,DOM-TECHNICAL-004,Install base data table,postgres.postgresql.svc.cluster.local,machine_demo,install_base,,Table,,false,false,MES System
+TDO-STATE-001,states,states,Technical Table,DOM-TECHNICAL-005,Machine state tracking table,postgres.postgresql.svc.cluster.local,machine_demo,states,,Table,,false,false,MES System
+TDO-EVENT-001,event_logs,event_logs,Technical Table,DOM-TECHNICAL-006,Event log data table,postgres.postgresql.svc.cluster.local,machine_demo,event_logs,,Table,,false,false,MES System

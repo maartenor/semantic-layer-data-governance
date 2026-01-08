@@ -1,0 +1,54 @@
+relation_id,source_asset_id,target_asset_id,relation_type,description
+REL-001,LDO-CUST-001,BDO-CUST-001,maps to,Logical customer entity maps to business customer object
+REL-002,TDO-CUST-001,LDO-CUST-001,implements,Technical customers table implements logical customer entity
+REL-003,LDO-CUST-002,BDO-CUST-002,maps to,Logical customer_id maps to business Customer ID
+REL-004,TDO-CUST-002,LDO-CUST-002,implements,Technical customer_id column implements logical customer_id
+REL-005,LDO-CUST-003,BDO-CUST-003,maps to,Logical customer_name maps to business Customer Name
+REL-006,TDO-CUST-003,LDO-CUST-003,implements,Technical customer_name column implements logical customer_name
+REL-007,LDO-CUST-004,BDO-CUST-004,maps to,Logical country maps to business Country
+REL-008,TDO-CUST-004,LDO-CUST-004,implements,Technical country column implements logical country
+REL-009,LDO-MACH-001,BDO-MACH-001,maps to,Logical machine entity maps to business machine object
+REL-010,TDO-MACH-001,LDO-MACH-001,implements,Technical machines table implements logical machine entity
+REL-011,LDO-MACH-002,BDO-MACH-002,maps to,Logical machine_nr maps to business Machine Number
+REL-012,TDO-MACH-002,LDO-MACH-002,implements,Technical machine_nr column implements logical machine_nr
+REL-013,LDO-MACH-003,BDO-MACH-003,maps to,Logical customer_id maps to business Customer
+REL-014,TDO-MACH-003,LDO-MACH-003,implements,Technical customer_id column implements logical customer_id
+REL-015,LDO-MACH-004,BDO-MACH-004,maps to,Logical machine_type maps to business Machine Type
+REL-016,TDO-MACH-004,LDO-MACH-004,implements,Technical machine_type column implements logical machine_type
+REL-017,LDO-MACH-005,BDO-MACH-005,maps to,Logical model maps to business Model
+REL-018,TDO-MACH-005,LDO-MACH-005,implements,Technical model column implements logical model
+REL-019,TDO-MACH-003,TDO-CUST-002,foreign key,machines.customer_id references customers.customer_id
+REL-020,LDO-LOC-001,BDO-LOC-001,maps to,Logical location entity maps to business location object
+REL-021,LDO-LOC-002,BDO-LOC-002,maps to,Logical location_id maps to business Location ID
+REL-022,LDO-LOC-003,BDO-LOC-003,maps to,Logical customer_id maps to business Customer ID
+REL-023,LDO-LOC-004,BDO-LOC-004,maps to,Logical site_name maps to business Site Name
+REL-024,LDO-LOC-005,BDO-LOC-005,maps to,Logical city maps to business City
+REL-025,LDO-LOC-006,BDO-LOC-006,maps to,Logical country maps to business Country
+REL-026,LDO-LOC-007,BDO-LOC-007,maps to,Logical latitude maps to business Latitude
+REL-027,LDO-LOC-008,BDO-LOC-008,maps to,Logical longitude maps to business Longitude
+REL-028,LDO-IB-001,BDO-IB-001,maps to,Logical install base entity maps to business install base object
+REL-029,LDO-IB-002,BDO-IB-002,maps to,Logical machine_nr maps to business Machine Number
+REL-030,LDO-IB-003,BDO-IB-003,maps to,Logical location_id maps to business Location ID
+REL-031,LDO-IB-004,BDO-IB-004,maps to,Logical installation_date maps to business Installation Date
+REL-032,LDO-STATE-001,BDO-STATE-001,maps to,Logical state entity maps to business state object
+REL-033,LDO-STATE-002,BDO-STATE-002,maps to,Logical state_id maps to business State ID
+REL-034,LDO-STATE-003,BDO-STATE-003,maps to,Logical machine_nr maps to business Machine Number
+REL-035,LDO-STATE-004,BDO-STATE-004,maps to,Logical state_code maps to business State Code
+REL-036,LDO-STATE-005,BDO-STATE-005,maps to,Logical state_desc maps to business State Description
+REL-037,LDO-STATE-006,BDO-STATE-006,maps to,Logical start_time maps to business Start Time
+REL-038,LDO-STATE-007,BDO-STATE-007,maps to,Logical end_time maps to business End Time
+REL-039,LDO-EVENT-001,BDO-EVENT-001,maps to,Logical event log entity maps to business event log object
+REL-040,LDO-EVENT-002,BDO-EVENT-002,maps to,Logical event_id maps to business Event ID
+REL-041,LDO-EVENT-003,BDO-EVENT-003,maps to,Logical machine_nr maps to business Machine Number
+REL-042,LDO-EVENT-004,BDO-EVENT-004,maps to,Logical event_time maps to business Event Time
+REL-043,LDO-EVENT-005,BDO-EVENT-005,maps to,Logical event_type maps to business Event Type
+REL-044,LDO-EVENT-006,BDO-EVENT-006,maps to,Logical metric_value maps to business Metric Value
+REL-045,LDO-CUST-001,LDO-LOC-001,is located at,Customer is located at Location
+REL-046,LDO-IB-001,LDO-MACH-001,references,Install Base references Machine
+REL-047,LDO-IB-001,LDO-LOC-001,references,Install Base references Location
+REL-048,LDO-MACH-001,LDO-STATE-001,has,Machine has State
+REL-049,LDO-MACH-001,LDO-EVENT-001,generates,Machine generates Event Log
+REL-050,TDO-LOC-001,LDO-LOC-001,implements,Technical locations table implements logical location entity
+REL-051,TDO-IB-001,LDO-IB-001,implements,Technical install_base table implements logical install base entity
+REL-052,TDO-STATE-001,LDO-STATE-001,implements,Technical states table implements logical state entity
+REL-053,TDO-EVENT-001,LDO-EVENT-001,implements,Technical event_logs table implements logical event log entity

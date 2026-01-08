@@ -1,0 +1,13 @@
+{
+  "projects": [
+    {
+      "name": "human",
+      "packages": [
+        {
+          "name": "human",
+          "location": "./human/"
+        }
+      ]
+    }
+  ]
+}

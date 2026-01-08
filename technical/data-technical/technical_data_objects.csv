@@ -1,0 +1,14 @@
+asset_id,asset_name,display_name,asset_type,domain_id,description,database_name,schema_name,table_name,column_name,data_type,max_length,is_nullable,is_primary_key,source_system
+TDO-CUST-001,c1,c1,Technical Table,DOM-TECHNICAL-001,c,postgres.postgresql.svc.cluster.local,unclear_demo,kristopher,,Table,,FALSE,FALSE,ERP System
+TDO-CUST-002,c2,c2,Technical Column,DOM-TECHNICAL-001,c,postgres.postgresql.svc.cluster.local,unclear_demo,kristopher,id,VARCHAR,10,FALSE,TRUE,ERP System
+TDO-CUST-003,c3,c3,Technical Column,DOM-TECHNICAL-001,c,postgres.postgresql.svc.cluster.local,unclear_demo,kristopher,descr,VARCHAR,255,FALSE,FALSE,ERP System
+TDO-CUST-004,c4,c4,Technical Column,DOM-TECHNICAL-001,c,postgres.postgresql.svc.cluster.local,unclear_demo,kristopher,cont,VARCHAR,100,FALSE,FALSE,ERP System
+TDO-MACH-001,m1,m1,Technical Table,DOM-TECHNICAL-002,c,postgres.postgresql.svc.cluster.local,unclear_demo,madelief,,Table,,FALSE,FALSE,MES System
+TDO-MACH-002,m2,m2,Technical Column,DOM-TECHNICAL-002,c,postgres.postgresql.svc.cluster.local,unclear_demo,madelief,out,VARCHAR,10,FALSE,TRUE,MES System
+TDO-MACH-003,m3,m3,Technical Column,DOM-TECHNICAL-002,c,postgres.postgresql.svc.cluster.local,unclear_demo,madelief,kladblok,VARCHAR,10,FALSE,FALSE,MES System
+TDO-MACH-004,m4,m4,Technical Column,DOM-TECHNICAL-002,c,postgres.postgresql.svc.cluster.local,unclear_demo,madelief,sneeuw,VARCHAR,10,FALSE,FALSE,MES System
+TDO-MACH-005,m5,m5,Technical Column,DOM-TECHNICAL-002,c,postgres.postgresql.svc.cluster.local,unclear_demo,madelief,kind,VARCHAR,50,FALSE,FALSE,MES System
+TDO-LEONIE-001,l1,l1,Technical Table,DOM-TECHNICAL-003,c,postgres.postgresql.svc.cluster.local,unclear_demo,leonie,,Table,,FALSE,FALSE,ERP System
+TDO-BART-001,b1,b1,Technical Table,DOM-TECHNICAL-004,c,postgres.postgresql.svc.cluster.local,unclear_demo,bart,,Table,,FALSE,FALSE,MES System
+TDO-ZACHARIAS-001,z1,z1,Technical Table,DOM-TECHNICAL-005,c,postgres.postgresql.svc.cluster.local,unclear_demo,zacharias,,Table,,FALSE,FALSE,MES System
+TDO-ERNESTO-001,e1,e1,Technical Table,DOM-TECHNICAL-006,c,postgres.postgresql.svc.cluster.local,unclear_demo,ernesto,,Table,,FALSE,FALSE,MES System

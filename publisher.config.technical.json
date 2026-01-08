@@ -1,0 +1,13 @@
+{
+  "projects": [
+    {
+      "name": "technical",
+      "packages": [
+        {
+          "name": "technical",
+          "location": "./technical"
+        }
+      ]
+    }
+  ]
+}

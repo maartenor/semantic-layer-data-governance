@@ -1,0 +1,5 @@
+{
+  "name": "Semantic layer using data governance application - human version",
+  "version": "0.1.0",
+  "description": "Human - Semantic layer using data governance application. Using a data governance application output, to use in a semantic layer, which can be used in a Model Context Protocol (MCP) server to have a Large-Language Model (LLM) answer questions on data in a database (PostgreSQL)."
+}
