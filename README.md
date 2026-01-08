@@ -16,15 +16,15 @@ For implicity sake, the business- logical- and technical layer data objects are 
 Here you see that 'customer' table is not existing. But the table is named 'kirstopher', which should make it meaningless or incorrect interpreted by a human or LLM if searching for customer (data).
 
 # Running the MCP server
-Mind the different `./publisher.config.<type>.json` used, since multi-project config file not well supported yet.
+Mind the different `./publisher.config.<type>.json` used, since multi-project config file not well supported yet. More details on running Malloy Publisher as an MCP server, check https://docs.malloydata.dev/documentation/user_guides/publishing/publishing 
 
 ```bash
 # Unix
 
-# Human and LLM easy @ port 4040
+# -p port 4040 Human and LLM easy
 docker run -p 4000:4000 -p 4040:4040 -v ./publisher.config.human.json:/publisher/publisher.config.json -v ./human:/publisher/human ms2data/malloy-publisher
 
-# Harder, technical data objects / table- and columns @ 4041
+# -p 4041 Harder, technical data objects / table- and columns
 docker run -p 4001:4000 -p 4041:4040 -v ./publisher.config.technical.json:/publisher/publisher.config.json -v ./technical:/publisher/technical ms2data/malloy-publisher
 
 ```
