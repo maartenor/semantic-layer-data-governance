@@ -1,7 +1,7 @@
 -- source.malloy
 
 source: business_data_object is duckdb.table('./data/business_data_objects.csv') -> {
-    select: -- asset_id,
+    select: asset_id,
             asset_name,
             display_name,
             -- domain_id,
