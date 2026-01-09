@@ -9,7 +9,7 @@ Using a data governance application output, to use in a semantic layer, which ca
 
 For implicity sake, the business- logical- and technical layer data objects are kept 1:1. Logical- or technical objects are aimed to be extended.
 
-## The database is easily interpretable by humans and LLMs.
+## The database is hard to interpretable by humans and LLMs.
 
 !["Technical oriented data model, with unclear table names."](./technical/technical%20data%20model.png "Technical oriented data model, with unclear table names.")
 
